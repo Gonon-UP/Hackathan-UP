@@ -3,7 +3,7 @@ public class Display extends JFrame {
 
     public Display() {
         // Load the image
-        tile = Toolkit.getDefaultToolkit().getImage("path/to/your/image.jpg");
+        tile = Toolkit.getDefaultToolkit().getImage("HACKATHAN-UP/UP_Seal_Tiled/University_of_Portland_seal.png");
 
         setTitle("Display Image in JFrame");
         setSize(1200, 1200);
@@ -13,11 +13,6 @@ public class Display extends JFrame {
 
     public void paint(Graphics g) {
         super.paint(g);
-        g.drawImage(img, 0, 0, this);  // Draw image at coordinates (0, 0)
+        g.drawImage(tile, 0, 0, this);  // Draw image at coordinates (0, 0)
     }
-
-    public static void main(String[] args) {
-        new ImageInJFrameExample();
-    }
-
 }
